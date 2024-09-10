@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Filters\ProductFilter;
 use App\Filters\ProductItemFilter;
 use App\Http\Resources\CategoryCollection;
 use App\Repositories\Interfaces\CategoryRepositoryInterface;
@@ -16,8 +17,8 @@ class CategoryController extends Controller
         $this->categoryRepository = $categoryRepository;
     }
 
-    public function getCategories(ProductItemFilter $filters):ResourceCollection
+    public function getCategories(ProductItemFilter $productItemFilter, ProductFilter $productFilter):ResourceCollection
     {
-        return new CategoryCollection($this->categoryRepository->getCategories($filters));
+        return new CategoryCollection($this->categoryRepository->getCategories($productItemFilter, $productFilter));
     }
 }

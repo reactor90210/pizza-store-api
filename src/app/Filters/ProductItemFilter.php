@@ -17,11 +17,6 @@ class ProductItemFilter extends QueryFilters
         return $this->builder->whereIn('size', explode(',', $term));
     }
 
-    public function ingredient($term):Builder
-    {
-        return $this->builder->whereIn('id', explode(',', $term));
-    }
-
     public function type($term):Builder
     {
         return $this->builder->whereIn('pizza_type', explode(',', $term));

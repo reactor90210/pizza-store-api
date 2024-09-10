@@ -17,7 +17,6 @@ class ProductRepository implements ProductRepositoryInterface
     public function getRecommended():Collection
     {
         return Product::with('productItems')
-                        ->selectPrice()
                         ->inRandomOrder()
                         ->limit(4)
                         ->get();

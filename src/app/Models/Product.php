@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Filters\Filterable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
@@ -10,7 +11,7 @@ use Illuminate\Database\Eloquent\Builder;
 
 class Product extends Model
 {
-    use HasFactory;
+    use HasFactory, Filterable;
 
     public function productItems(): HasMany
     {
@@ -22,12 +23,12 @@ class Product extends Model
         return $this->belongsToMany(Ingredient::class);
     }
 
-    public function scopeSelectPrice(Builder $query):void
-    {
-         $query->addSelect(['price' =>
-            ProductItem::selectRaw('min(price)')
-                ->whereColumn('product_items.product_id', 'products.id')
-        ]);
-    }
+//    public function scopeSelectPrice(Builder $query):void
+//    {
+//         $query->addSelect(['price' =>
+//            ProductItem::selectRaw('min(price)')
+//                ->whereColumn('product_items.product_id', 'products.id')
+//        ]);
+//    }
 
 }
