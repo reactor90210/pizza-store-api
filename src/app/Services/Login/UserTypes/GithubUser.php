@@ -5,6 +5,7 @@ namespace App\Services\Login\UserTypes;
 use App\Repositories\Interfaces\UserRepositoryInterface;
 use App\Services\Login\Interfaces\OAuthUser;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Log;
 
 class GithubUser implements OAuthUser
 {
@@ -21,7 +22,7 @@ class GithubUser implements OAuthUser
             'provider'=> $dbProvider,
             'provider_id'=> strval($user->user['id']),
             'avatar'=> $user->user['avatar_url'],
-            'name'=> $user->user['login']
+            'name'=> $user->user['login'],
         ];
 
        return $this->userRepository->firstOrCreate($dbProvider, $userArray);

@@ -5,7 +5,7 @@ namespace App\Http\Resources;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class AuthTokenResource extends JsonResource
+class ResponseResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -15,8 +15,7 @@ class AuthTokenResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'token' => $this->resource,
-            'ttl' => (int)config('jwt.ttl')
+            'data' => $this->resource
         ];
     }
 }

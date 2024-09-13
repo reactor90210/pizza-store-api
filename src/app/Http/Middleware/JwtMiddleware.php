@@ -4,7 +4,6 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Tymon\JWTAuth\Exceptions\TokenInvalidException;
@@ -19,10 +18,9 @@ class JwtMiddleware
      */
     public function handle(Request $request, Closure $next): Response
     {
-        //Log::info(json_encode($request->headers));
         try {
-            $user = JWTAuth::parseToken()->authenticate();
-          //  Log::info(json_encode($user));
+            JWTAuth::parseToken()->authenticate();
+
         } catch (\Exception $e) {
             if ($e instanceof TokenInvalidException){
                 return response()->json(['status' => 'Token is Invalid']);

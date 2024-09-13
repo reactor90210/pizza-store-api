@@ -171,6 +171,7 @@ return [
         App\Providers\TelescopeServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
         App\Providers\LoginServiceProvider::class,
+        App\Providers\RegistrationServiceProvider::class,
         Tymon\JWTAuth\Providers\LaravelServiceProvider::class,
     ])->toArray(),
 

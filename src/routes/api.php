@@ -7,6 +7,7 @@ use App\Http\Controllers\IngredientController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UserController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -32,9 +33,11 @@ Route::get('auth/{provider}', [AuthController::class, 'getProviderRedirect']);
 Route::get('auth/{provider}/callback', [AuthController::class, 'getProviderCallback']);
 
 Route::post('auth/login', [AuthController::class, 'postLogin']);
+Route::post('auth/registration', [AuthController::class, 'postRegistration']);
 
 Route::group(['middleware'=>['jwt.verify']], function(){
-    Route::get('user', [ProfileController::class, 'getUser']);
+    Route::get('user', [UserController::class, 'getUser']);
+    Route::post('user', [UserController::class, 'postUpdateUser']);
     Route::post('auth/logout', [AuthController::class, 'postLogout']);
 });
 

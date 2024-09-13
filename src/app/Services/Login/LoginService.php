@@ -11,7 +11,7 @@ class LoginService
 
     }
 
-    public function OAuthLogin(string $provider)
+    public function OAuthLogin(string $provider): string
     {
         $oAuthUser = Socialite::driver($provider)->stateless()->user();
         $factory = $this->userFactory->create($provider);
@@ -19,7 +19,7 @@ class LoginService
         return auth()->login($factory->get($provider, $oAuthUser));
     }
 
-    public function credentialsLogin(array $credentials) : string
+    public function credentialsLogin(array $credentials) : string | ValidationException
     {
         $factory = $this->userFactory->create('email');
 
