@@ -6,6 +6,7 @@ use App\Http\Resources\ProductResource;
 use App\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Resources\ProductCollection;
 use Illuminate\Http\Request;
+use App\Http\Resources\Api\ApiResponse;
 
 class ProductController extends Controller
 {
@@ -15,16 +16,16 @@ class ProductController extends Controller
     {
         $this->productRepository = $productRepository;
     }
-    public function getBySlug($slug):ProductResource
+    public function getBySlug($slug): ApiResponse
     {
-        return new ProductResource($this->productRepository->getBySlug($slug));
+        return new ApiResponse(new ProductResource($this->productRepository->getBySlug($slug)));
     }
-    public function getRecommended():ProductCollection
+    public function getRecommended(): ApiResponse
     {
-        return new ProductCollection($this->productRepository->getRecommended());
+        return new ApiResponse(new ProductCollection($this->productRepository->getRecommended()));
     }
-    public function getSearch(Request $request):ProductCollection
+    public function getSearch(Request $request): ApiResponse
     {
-        return new ProductCollection($this->productRepository->getSearch($request->input('query')));
+        return new ApiResponse(new ProductCollection($this->productRepository->getSearch($request->input('query'))));
     }
 }

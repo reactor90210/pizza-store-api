@@ -16,11 +16,12 @@ class UserService
     private function userData($requestArray) : array
     {
          $data = ['name' => $requestArray['name'],
-                 'email' => $requestArray['email']];
+                 'email' => $requestArray['email'],
+                 'password' => Hash::make($requestArray['password'])];
 
-        if(auth()->user()->provider === 1){
-            $data['password'] = Hash::make($requestArray['password']);
-        }
+        //if(auth()->user()->provider === 1){
+            //$data['password'] = Hash::make($requestArray['password']);
+        //}
 
         return $data;
     }

@@ -15,7 +15,7 @@ class AuthTokenResource extends JsonResource
     public function toArray(Request $request): array
     {
         return [
-            'token' => $this->resource,
+            'value' => $this->resource,
             'ttl' => (int)config('jwt.ttl')
         ];
     }

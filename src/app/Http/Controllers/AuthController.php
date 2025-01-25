@@ -9,7 +9,7 @@ use App\Http\Resources\LoginResource;
 use App\Services\UserService;
 use App\Http\Requests\RegistrationRequest;
 use App\Http\Resources\UserResource;
-use App\Http\Resources\ResponseResource;
+use App\Http\Resources\Api\ApiResponse;
 
 class AuthController extends Controller
 {
@@ -19,27 +19,27 @@ class AuthController extends Controller
         return Socialite::driver($provider)->stateless()->redirect();
     }
 
-    public function getProviderCallback(string $provider, LoginService $loginService) : LoginResource
+    public function getProviderCallback(string $provider, LoginService $loginService) : ApiResponse
     {
         $token = $loginService->OAuthLogin($provider);
-        return new LoginResource($token);
+        return new ApiResponse(new LoginResource($token));
     }
 
-    public function postLogin(LoginRequest $request, LoginService $loginService) : LoginResource
+    public function postLogin(LoginRequest $request, LoginService $loginService) : ApiResponse
     {
         $token = $loginService->credentialsLogin($request->only('email', 'password'));
 
-        return new LoginResource($token);
+        return new ApiResponse(new LoginResource($token));
     }
 
-    public function postLogout() : ResponseResource
+    public function postLogout() : ApiResponse
     {
         auth()->logout();
-        return new ResponseResource(true);
+        return new ApiResponse(true);
     }
 
-    public function postRegistration(RegistrationRequest $request, UserService $service): UserResource
+    public function postRegistration(RegistrationRequest $request, UserService $service): ApiResponse
     {
-        return new UserResource($service->registration($request->all()));
+        return new ApiResponse(new UserResource($service->registration($request->all())));
     }
 }

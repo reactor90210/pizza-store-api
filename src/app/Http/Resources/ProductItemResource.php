@@ -17,7 +17,7 @@ class ProductItemResource extends JsonResource
         return [
             'id' => $this->id,
             'price' => $this->price,
-            'size' => $this->size,
+            'size' => (string) $this->size,
             'pizza_type' => $this->pizza_type
         ];
     }

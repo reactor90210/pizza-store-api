@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Resources\IngredientCollection;
 use App\Repositories\Interfaces\IngredientRepositoryInterface;
 use Illuminate\Http\Request;
+use App\Http\Resources\Api\ApiResponse;
 
 class IngredientController extends Controller
 {
@@ -15,8 +16,8 @@ class IngredientController extends Controller
         $this->ingredientRepository = $ingredientRepository;
     }
 
-    public function getIngredients():IngredientCollection
+    public function getIngredients(): ApiResponse
     {
-        return new IngredientCollection($this->ingredientRepository->getIngredients());
+        return new ApiResponse(new IngredientCollection($this->ingredientRepository->getIngredients()));
     }
 }

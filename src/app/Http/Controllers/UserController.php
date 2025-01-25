@@ -4,18 +4,18 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\UpdateUserRequest;
 use App\Http\Resources\UserResource;
-use App\Http\Resources\ResponseResource;
 use App\Services\UserService;
+use App\Http\Resources\Api\ApiResponse;
 
 class UserController extends Controller
 {
-    public function getUser() : UserResource
+    public function getUser() : ApiResponse
     {
-        return new UserResource(auth()->user());
+        return new ApiResponse(new UserResource(auth()->user()));
     }
 
-    public function postUpdateUser(UpdateUserRequest $request, UserService $userService) : ResponseResource
+    public function postUpdateUser(UpdateUserRequest $request, UserService $userService) : ApiResponse
     {
-        return new ResponseResource($userService->update($request->all()));
+        return new ApiResponse((bool)$userService->update($request->all()));
     }
 }

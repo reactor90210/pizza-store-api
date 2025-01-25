@@ -16,7 +16,7 @@ class LoginResource extends JsonResource
     {
         return [
             'user' => new UserResource(auth()->user()),
-            'auth' => new AuthTokenResource($this->resource),
+            'token' => new AuthTokenResource($this->resource),
         ];
     }
 }

@@ -29,6 +29,7 @@ class LoginService
                 'email' => ['Email address does not match.'],
             ]);
         }
+
         $token = auth()->attempt($credentials);
         if(!$token){
             throw ValidationException::withMessages([
