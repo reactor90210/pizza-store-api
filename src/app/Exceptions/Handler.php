@@ -37,13 +37,13 @@ class Handler extends ExceptionHandler
     {
         if ($request->expectsJson()) {
             if($e instanceof NotFoundHttpException) {
-                return new ApiResponse(null, 404, [$e->getMessage()]);
+                return new ApiResponse(null, 404, ['message' => $e->getMessage()]);
             }
             elseif ($e instanceof ValidationException){
                 return new ApiResponse(null, 422, $e->errors());
             }
             else {
-                return new ApiResponse(null, 500, ['Internal server error']);
+                return new ApiResponse(null, 500, ['message' => 'Internal server error']);
             }
         }
 
