@@ -18,7 +18,7 @@ class ProductItemResource extends JsonResource
             'id' => $this->id,
             'price' => $this->price,
             'size' => (string) $this->size,
-            'pizza_type' => $this->pizza_type
+            'pizza_type' => $this->pizza_type ? (string)$this->pizza_type : null
         ];
     }
 }
