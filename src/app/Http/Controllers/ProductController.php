@@ -7,6 +7,7 @@ use App\Repositories\Interfaces\ProductRepositoryInterface;
 use App\Http\Resources\ProductCollection;
 use Illuminate\Http\Request;
 use App\Http\Resources\Api\ApiResponse;
+use Illuminate\Support\Facades\Log;
 
 class ProductController extends Controller
 {
@@ -18,7 +19,13 @@ class ProductController extends Controller
     }
     public function getBySlug($slug): ApiResponse
     {
-        return new ApiResponse(new ProductResource($this->productRepository->getBySlug($slug)));
+        $product = $this->productRepository->getBySlug($slug);
+
+        if (is_null($product)) {
+            new ApiResponse(null, 404);
+        }
+
+        return new ApiResponse(new ProductResource($product));
     }
     public function getRecommended(): ApiResponse
     {

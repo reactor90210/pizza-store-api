@@ -1,120 +1,120 @@
 [
     {
-        "name": "pepperoni fresh",
+        "name": "Пепперони фреш",
         "image":
         "https://media.dodostatic.net/image/r:233x233/11EE7D61304FAF5A98A6958F2BB2D260.webp",
         "category_id": 1
     },
     {
-        "name": "cheesy",
+        "name": "Сырная",
         "image":
         "https://media.dodostatic.net/image/r:233x233/11EE7D610CF7E265B7C72BE5AE757CA7.webp",
         "category_id": 1
     },
     {
-        "name": "fresh chorizo",
+        "name": "Чоризо фреш",
         "image":
         "https://media.dodostatic.net/image/r:584x584/11EE7D61706D472F9A5D71EB94149304.webp",
         "category_id": 1
     },
     {
-        "name": "omelette with ham and mushrooms",
+        "name": "Омлет с ветчиной и грибами",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7970321044479C1D1085457A36EB.webp",
         "category_id": 2
     },
     {
-        "name": "omelette with pepperoni",
+        "name": "Омлет с пепперони",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE94ECF33B0C46BA410DEC1B1DD6F8.webp",
         "category_id": 2
     },
     {
-        "name": "coffee Latte",
+        "name": "Кофе Латте",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp",
         "category_id": 2
     },
     {
-        "name": "ham and cheese sandwich",
+        "name": "Дэнвич ветчина и сыр",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE796FF0059B799A17F57A9E64C725.webp",
         "category_id": 3
     },
     {
-        "name": "chicken nuggets",
+        "name": "Куриные наггетсы",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D618B5C7EC29350069AE9532C6E.webp",
         "category_id": 3
     },
     {
-        "name": "baked potatoes with sauce 🌱",
+        "name": "Картофель из печи с соусом 🌱",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EED646A9CD324C962C6BEA78124F19.webp",
         "category_id": 3
     },
     {
-        "name": "dodster",
+        "name": "Додстер",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE796F96D11392A2F6DD73599921B9.webp",
         "category_id": 3
     },
     {
-        "name": "spicy Dodster 🌶️🌶️",
+        "name": "Острый Додстер 🌶️🌶️",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE796FD3B594068F7A752DF8161D04.webp",
         "category_id": 3
     },
     {
-        "name": "banana milkshake",
+        "name": "Банановый молочный коктейль",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EEE20B8772A72A9B60CFB20012C185.webp",
         "category_id": 4
     },
     {
-        "name": "caramel apple milkshake",
+        "name": "Карамельное яблоко молочный коктейль",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE79702E2A22E693D96133906FB1B8.webp",
         "category_id": 4
     },
     {
-        "name": "oreo cookie milkshake",
+        "name": "Молочный коктейль с печеньем Орео",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE796FA1F50F8F8111A399E4C1A1E3.webp",
         "category_id": 4
     },
     {
-        "name": "classic milkshake 👶",
+        "name": "Классический молочный коктейль 👶",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE796F93FB126693F96CB1D3E403FB.webp",
         "category_id": 4
     },
     {
-        "name": "irish cappuccino",
+        "name": "Ирландский Капучино",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61999EBDA59C10E216430A6093.webp",
         "category_id": 5
     },
     {
-        "name": "caramel cappuccino coffee",
+        "name": "Кофе Карамельный капучино",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61AED6B6D4BFDAD4E58D76CF56.webp",
         "category_id": 5
     },
     {
-        "name": "coconut latte coffee",
+        "name": "Кофе Кокосовый латте",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61B19FA07090EE88B0ED347F42.webp",
         "category_id": 5
     },
     {
-        "name": "coffee americano",
+        "name": "Кофе Американо",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61B044583596548A59078BBD33.webp",
         "category_id": 5
     },
     {
-        "name": "coffee latte",
+        "name": "Кофе Латте",
         "image":
         "https://media.dodostatic.net/image/r:292x292/11EE7D61B0C26A3F85D97A78FEEE00AD.webp",
         "category_id": 5

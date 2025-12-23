@@ -12,7 +12,7 @@ class CategoryRepository implements CategoryRepositoryInterface
 {
     public function getCategories(ProductItemFilter $productItemFilter, ProductFilter $productFilter):Collection
     {
-        return Category::with(['products.productItems'])
+        return Category::with(['products.productItems', 'products.ingredients'])
             ->withWhereHas('products' , function($query) use ($productItemFilter, $productFilter){
                 $query->whereHas('productItems', function($itemQuery) use ($productItemFilter){
                     $itemQuery->filter($productItemFilter);
