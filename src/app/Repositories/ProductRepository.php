@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class ProductRepository implements ProductRepositoryInterface
 {
-    public function getBySlug($slug):Model
+    public function getBySlug($slug): ?Model
     {
         return Product::with(['ingredients', 'productItems'])->where('slug', $slug)->first();
     }

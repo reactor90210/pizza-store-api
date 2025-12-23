@@ -1,17 +1,17 @@
 [
     {
-        "name": "Пиццы"
+        "name": "pizza"
     },
     {
-        "name": "Завтрак"
+        "name": "breakfast"
     },
     {
-        "name": "Закуски"
+        "name": "snacks"
     },
     {
-        "name": "Коктейли"
+        "name": "cocktails"
     },
     {
-        "name": "Напитки"
+        "name": "drinks"
     }
 ]

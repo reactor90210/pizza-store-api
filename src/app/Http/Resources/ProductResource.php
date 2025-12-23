@@ -20,6 +20,7 @@ class ProductResource extends JsonResource
             'slug' => $this->slug,
             'image' => $this->image,
             'price' =>  $this->whenHas('price'),
+            'category_id' =>  $this->category_id,
             'productItems' => ProductItemResource::collection($this->whenLoaded('productItems')),
 //            'productItemDefault' => $this->whenLoaded('productItemsOrdered', function (){
 //                return new ProductItemResource($this->productItemsOrdered->first());

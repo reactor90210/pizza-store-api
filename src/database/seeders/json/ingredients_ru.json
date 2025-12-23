@@ -1,90 +1,90 @@
 [
     {
-        "name": "cheese side",
+        "name": "Сырный бортик",
         "price": 179,
         "image":
         "https://cdn.dodostatic.net/static/Img/Ingredients/99f5cb91225b4875bd06a26d2e842106.png"
     },
     {
-        "name": "creamy mozzarella",
+        "name": "Сливочная моцарелла",
         "price": 79,
         "image":
         "https://cdn.dodostatic.net/static/Img/Ingredients/cdea869ef287426386ed634e6099a5ba.png"
     },
     {
-        "name": "cheddar and parmesan cheeses",
+        "name": "Сыры чеддер и пармезан",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA69C1FE796"
     },
     {
-        "name": "hot jalapeño pepper",
+        "name": "Острый перец халапеньо",
         "price": 59,
         "image":
         "https://cdn.dodostatic.net/static/Img/Ingredients/11ee95b6bfdf98fb88a113db92d7b3df.png"
     },
     {
-        "name": "tender chicken",
+        "name": "Нежный цыпленок",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA5B328D35A"
     },
     {
-        "name": "champignons",
+        "name": "Шампиньоны",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA67259A324"
     },
     {
-        "name": "ham",
+        "name": "Ветчина",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA61B9A8D61"
     },
     {
-        "name": "spicy pepperoni",
+        "name": "Пикантная пепперони",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA6258199C3"
     },
     {
-        "name": "spicy chorizo",
+        "name": "Острая чоризо",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA62D5D6027"
     },
     {
-        "name": "pickled cucumbers",
+        "name": "Маринованные огурчики",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9EA89958D782B"
     },
     {
-        "name": "fresh tomatoes",
+        "name": "Свежие томаты",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA7AC1A1D67"
     },
     {
-        "name": "red onion",
+        "name": "Красный лук",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA60AE6464C"
     },
     {
-        "name": "juicy pineapples",
+        "name": "Сочные ананасы",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A21DA51A81211E9AFA6795BA2A0"
     },
     {
-        "name": "italian herbs",
+        "name": "Итальянские травы",
         "price": 39,
         "image":
         "https://cdn.dodostatic.net/static/Img/Ingredients/370dac9ed21e4bffaf9bc2618d258734.png"
     },
     {
-        "name": "sweet pepper",
+        "name": "Сладкий перец",
         "price": 59,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A22FA54A81411E9AFA63F774C1B"
     },
     {
-        "name": "feta cheese cubes",
+        "name": "Кубики брынзы",
         "price": 79,
         "image": "https://cdn.dodostatic.net/static/Img/Ingredients/000D3A39D824A82E11E9AFA6B0FFC349"
     },
     {
-        "name": "meatballs",
+        "name": "Митболы",
         "price": 79,
         "image":
         "https://cdn.dodostatic.net/static/Img/Ingredients/b2f3a5d5afe44516a93cfc0d2ee60088.png"
